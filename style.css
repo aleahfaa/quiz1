@@ -1,0 +1,232 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: floralwhite;
+    color: black;
+}
+
+.menuicon, .sbnav, .content{
+    margin: 50px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 999;
+}
+
+.initials {
+    font-size: 25px;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px; /* Adjust font size as needed */
+    cursor: pointer;
+}
+
+/*.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}*/
+
+/* The side navigation menu */
+.sbnav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;
+    z-index: 1;
+    top: 0; 
+    right: 0px; /* Push the menu off the screen to the right */
+    background-color: transparent;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sbnav a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sbnav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sbnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sbnav.open {
+    right: 0; /* Slide in the menu from the right */
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.text-content {
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+    word-break: break-all; /* Breaks the word when it overflows the box */
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.portrait img {
+    max-width: 100%;
+    height: auto;
+}
+
+.a_typewriter {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    font-size: 50px;
+    letter-spacing: .15em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.b_typewriter {
+    overflow: hidden;
+    border-right: .15em solid;
+    font-size: 30px;
+    letter-spacing: .05em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: justify; /* Align the text as justified */
+    align-items: center;
+    justify-content: center;
+    white-space: normal; /* Allow wrapping at <br> elements */
+    display: block; /* Display as block to ensure full width */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+
+/*
+body.blocked {
+    background-color: black;
+    color: white;
+}
+*/
+
+.cube-container {
+    /*display: flex;*/
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Define the typing dots animation */
+@keyframes typing-dots {
+    0%, 20% {
+        opacity: 0;
+    } 50% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+/* Apply the typing dots animation to each cube */
+#cube1 {
+    animation: typing-dots 1s infinite 0s;
+}
+
+#cube2 {
+    animation: typing-dots 1s infinite 0.33s;
+}
+
+#cube3 {
+    animation: typing-dots 1s infinite 0.66s;
+}
+
+.footer {
+    background-color: black; /* Set the background color to black */
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    position: flex;
+    line-height: 1.5;
+    padding: 10px 20px; /* Add some padding for spacing */
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}

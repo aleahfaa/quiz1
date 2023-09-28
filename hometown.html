@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hometown.css" />
+    <script src="hometown.js" defer></script>
+    <title>Hometown</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="initials">[/'ia.></div>
+      <span class="menu" onclick="openNav()">&#9776; Menu</span>
+      <div id="sbnav" class="sbnav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="./">Home</a>
+        <a href="./profile">Profile</a>
+        <a href="./hometown">Hometown</a>
+        <a href="./food">Local Food</a>
+        <a href="./tourist">Tourist Place</a>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="sragen.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="sragen2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="sragen3.jpg" style="width: 100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="content">
+      <div class="text-content">
+        <h1 class="a_typewriter">Sragen (ꦱꦿꦒꦺꦤ꧀)</h1>
+        <h3 class="b_typewriter">
+          <a
+            href="https://id.wikipedia.org/wiki/Kabupaten_Sragen"
+            target="_blank"
+            >Sragen (ꦱꦿꦒꦺꦤ꧀)</a
+          >
+          is a district in the eastern part of Central Java (Jawa Tengah)
+          province in Indonesia. Its capital is the town of Sragen, located
+          about 30km to the northeast of Surakarta. Sragen borders Grobogan in
+          the North, Ngawi in the East, Karanganyar in the South, and Boyolali
+          in the West. Sragen is also known as "Bumi Sukowati". Even though the
+          area is small, only around 994.57km<sup>2</sup>. Sragen itself is one
+          of the highest rice producers in Central Java, even Indonesia.
+        </h3>
+        <div class="map-container">
+          <iframe
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7914.06598973407!2d110.89991532797068!3d-7.428076018380787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6bb53c59b86167%3A0x57adfbf24266c861!2sSragen%20Regency%2C%20Central%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1632240102423!5m2!1sen!2sus"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="cube-container">
+          <div id="cube1" class="cube"></div>
+          <div id="cube2" class="cube"></div>
+          <div id="cube3" class="cube"></div>
+        </div>
+        <div class="buttons-container">
+          <a href="./food" class="button">Local Food</a>
+          <a href="./tourist" class="button">Tourist Place</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <form
+        action="mailto:iffaamaliasabrina@gmail.com"
+        method="post"
+        enctype="multipart/form-data">
+        Name:<br />
+        <input type="text" name="name" /><br /><br />
+        Email:<br />
+        <input type="email" name="email" /><br /><br />
+        Message:<br />
+        <input name="message" /><br /><br />
+        <button type="submit" value="Send">Send</button>
+        <button type="reset" value="Reset">Reset</button>
+      </form>
+      <br />
+      <a href="https://github.com/aleahfaa" target="_blank">
+        <img src="discord.png" class="logo" />
+      </a>
+      <a href="https://www.instagram.com/aleahfa_" target="_blank">
+        <img src="instagram3.png" class="logo" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/iffa-amalia-sabrina/"
+        target="_blank">
+        <img src="linkedin.png" class="logo" />
+      </a>
+      <br />
+      Copyright &copy; 2023 by Iffa Amalia Sabrina<br />
+      ps. this website is currently under development~
+    </div>
+  </body>
+</html>
